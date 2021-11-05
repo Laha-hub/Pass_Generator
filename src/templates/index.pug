@@ -1,0 +1,29 @@
+extends _layout.pug
+
+block content
+    header
+        h1 Pass Generator
+    main
+        #app
+        .action
+            .popup &nbsp;
+            button.change(type="submit") change
+            button.copy(type="submit") copy
+        .options
+            label.option(for="option_num")
+                input#option_num(type="checkbox", name="option", value="number" checked)
+                | 123
+            label.option(for="option_lower")
+                input#option_lower(type="checkbox", name="option", value="lowerCase" checked)
+                | abc
+            label.option(for="option_upper")
+                input#option_upper(type="checkbox", name="option", value="upperCase" checked)
+                | ABC
+            label.option(for="option_symbol")
+                input#option_symbol(type="checkbox", name="option", value="symbol" checked)
+                | #$%
+    footer
+        small &copy; Pass Generator
+
+
+

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
+body {
+  color: white;
+  background-color: darkcyan;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: black;
+}
+
+.chars {
+  margin-bottom: 1rem;
+}
+
+.password {
+  color: yellow;
+  letter-spacing: .2rem;
+  font-family: 'Inconsolata', monospace;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.pass_btn {
+  background: none;
+  border-radius: 3px;
+  border: white 2px solid;
+  color: white;
+  cursor: pointer;
+  margin: 1rem auto;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  transition: opacity .3s;
+}
+
+.action {
+  margin-bottom: 2rem;
+}
+
+.copy, .change {
+  background-color: white;
+  color: teal;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: .2rem 1rem;
+  font-size: 1rem;
+  transition: opacity .3s;
+  margin-left: 5px;
+}
+
+.popup {
+  color: yellow;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.option {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+}
+
+@media screen and (min-width: 960px) {
+  body, .pass_btn {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .change, .copy, .popup {
+    font-size: 1.2rem;
+  }
+
+  .option {
+    transition: opacity .3s;
+  }
+
+  .pass_btn:hover, .copy:hover, .change:hover, .option:hover {
+    opacity: .7;
+  }
+
+  footer {
+    font-size: 1.4rem;
+    margin-top: 6rem;
+  }
+
+}
